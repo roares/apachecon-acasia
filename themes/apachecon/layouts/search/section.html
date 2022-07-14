@@ -286,16 +286,46 @@
 
     // next page
     $(".next").click(function () {
-      if(current_num < total_page){
-        document.getElementsByClassName('tmp')[current_num].click()  
-      }
+      if (current_num >= $(".total").text()) {   
+          $(".next").removeAttr('onclick');  
+          return false;
+        } else {
+            $(".current_page").text(++current_num);         
+            $.each($("article"), function (index, item) {
+                var start = current_page * (current_num - 1);
+                var end = current_page * current_num;
+                if (index >= start && index < end) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            })
+            $("#pagination-clean li").eq(current_num + 1).siblings('li').removeClass('selected');
+            $("#pagination-clean li").eq(current_num + 1).addClass('selected');
+        }
+        buttonHide(current_num)
     })
 
     // previous page
     $(".prev").click(function () {
-      if(current_num > 1){
-        document.getElementsByClassName('tmp')[current_num - 2].click()  
-      }
+        if (current_num <= 1) {
+          $(".prev").removeAttr('onclick');
+          return false;
+        } else {
+            $(".current_page").text(--current_num);
+            $.each($("article"), function (index, item) {
+                var start = current_page * (current_num - 1);
+                var end = current_page * current_num;
+                if (index >= start && index < end) {
+                    $(this).show();
+                } else {
+                    $(this).hide();
+                }
+            })  
+            $("#pagination-clean li").eq(current_num + 1).siblings('li').removeClass('selected');
+            $("#pagination-clean li").eq(current_num + 1).addClass('selected');    
+            buttonHide(current_num)
+        }
     })
     // first page
     $('.first').click(function(){
