@@ -230,7 +230,7 @@
       $('.hidden').after("<li class='tmp' value='"+i+"'><a>"+i+"</a></li>");      
     }
     // The first page is selected by default
-    $("#pagination-clean li").eq(1).addClass('selected');
+    $("#pagination-clean li").eq(2).addClass('selected');
 
     
     if(total_page > 10){
@@ -286,61 +286,34 @@
 
     // next page
     $(".next").click(function () {
-      if (current_num >= $(".total").text()) {   
-          $(".next").removeAttr('onclick');  
-          return false;
-        } else {
-            $(".current_page").text(++current_num);         
-            $.each($("article"), function (index, item) {
-                var start = current_page * (current_num - 1);
-                var end = current_page * current_num;
-                if (index >= start && index < end) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            })
-            $("#pagination-clean li").eq(current_num).siblings('li').removeClass('selected');
-            $("#pagination-clean li").eq(current_num).addClass('selected');
-        }
+      if(current_num < total_page){
+        document.getElementsByClassName('tmp')[current_num].click()  
+      }
     })
 
     // previous page
     $(".prev").click(function () {
-        if (current_num <= 1) {
-          $(".prev").removeAttr('onclick');
-          return false;
-        } else {
-            $(".current_page").text(--current_num);
-            $.each($("article"), function (index, item) {
-                var start = current_page * (current_num - 1);
-                var end = current_page * current_num;
-                if (index >= start && index < end) {
-                    $(this).show();
-                } else {
-                    $(this).hide();
-                }
-            })  
-            $("#pagination-clean li").eq(current_num).siblings('li').removeClass('selected');
-            $("#pagination-clean li").eq(current_num).addClass('selected');          
-        }
+      if(current_num > 1){
+        document.getElementsByClassName('tmp')[current_num - 2].click()  
+      }
     })
     // first page
     $('.first').click(function(){
-      document.getElementsByClassName('tmp')[0].click()
+      document.getElementsByClassName('tmp')[0].click()  
     })
 
     // last page
     $('.last').click(function(){
-      document.getElementsByClassName('tmp')[total_page - 1].click()
+      document.getElementsByClassName('tmp')[total_page - 1].click()  
     })
 
   // Page number selection
   $("#pagination-clean li").click(function(){
-    if($(this).attr("class") != "next" & $(this).attr("class") != "prev"){
+    let class_list = $(this).attr("class").split(" ") 
+    if(class_list.includes("tmp")){
       $(this).siblings('li').removeClass('selected');  // Delete styles for other sibling elements
       $(this).addClass('selected');                    // Adds the style of the current element
-    }   
+    }
   })
 
 }
