@@ -4,7 +4,7 @@ date: "2022-07-29T14:00:00"
 track: "observability"
 presenters: "Marc Navarro Sonnenfeld"
 stype: "英文演讲"
-speechLink: "https://player.bilibili.com/player.html?aid=942575517&cid=817760221&page=1"
+speechLink: "https://player.bilibili.com/player.html?aid=344524933&cid=806243859&page=1"
 ---
 Apache Skywalking是一款用于分布式系统的应用程序性能监控和可观察性工具，特别为微服务、云本地和基于容器(Kubernetes)架构设计的——有或没有服务网格。
 

@@ -4,7 +4,7 @@ date: "2022-07-31T13:30:00"
 track: "messaging"
 room: "A"
 presenters: "陈林"
-speechLink: "https://player.bilibili.com/player.html?aid=942575517&cid=817760221&page=1"
+speechLink: "https://player.bilibili.com/player.html?aid=899610052&cid=806453930&page=1"
 stype: "中文演讲"
 ---
 1. 什么是Apache InLong.

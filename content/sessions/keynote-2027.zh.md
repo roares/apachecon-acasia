@@ -4,7 +4,7 @@ date: "2022-07-29T09:05:00"
 track: "keynote"
 presenters: "陆首群"
 stype: "中文演讲"
-speechLink: "https://player.bilibili.com/player.html?aid=942575517&cid=817760221&page=1"
+speechLink: "https://player.bilibili.com/player.html?aid=514693608&cid=807173232&page=1"
 ---
 
 ### Speakers: 

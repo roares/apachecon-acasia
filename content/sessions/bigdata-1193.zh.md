@@ -4,7 +4,7 @@ date: "2022-07-31T16:50:00"
 track: "bigdata"
 room: "B"
 presenters: "张敬存,赵晨杰"
-speechLink: "https://player.bilibili.com/player.html?aid=942575517&cid=817760221&page=1"
+speechLink: "https://player.bilibili.com/player.html?aid=729572493&cid=806193049&page=1"
 stype: "中文演讲"
 ---
 

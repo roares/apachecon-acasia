@@ -4,7 +4,7 @@ date: "2022-07-30T14:50:00"
 track: "bigdata"
 room: "A"
 presenters: "喻兆靖"
-speechLink: "https://player.bilibili.com/player.html?aid=942575517&cid=817760221&page=1"
+speechLink: "https://player.bilibili.com/player.html?aid=687012295&cid=806028829&page=1"
 stype: "中文演讲"
 ---
 字节跳动目前是国内数据湖覆盖数据最多的公司之一，覆盖了百 PB 级别的数据。
