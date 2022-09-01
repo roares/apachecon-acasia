@@ -4,7 +4,7 @@ date: "2022-07-30T16:40:00"
 track: "culture"
 presenters: "Matthew Sacks"
 stype: "英文演讲"
-speechLink: "https://www.youtube.com/embed/B4EPCPaDMEM"
+speechLink: "https://player.bilibili.com/player.html?aid=942575517&cid=817760221&page=1"
 ---
 这将是一个关于讨论如何把软件文档变成一种艺术形式，使它变得自然，并帮助你更好地编写代码的演示。这也将有助于在您的组织中鼓励她的文档文化，这将让公司工程、业务、财务和运营之间能够更好沟通。
  ### Speakers: 
